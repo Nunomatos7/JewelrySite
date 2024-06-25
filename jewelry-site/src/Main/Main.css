@@ -1,0 +1,408 @@
+.home {
+    width: 100%;
+    font-family: 'Prata', Georgia, "Times New Roman", serif;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.09);
+    max-width: 1400px;
+    margin: 4rem auto;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.5rem;
+}
+
+.hero-text button {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px){
+    .hero {
+        margin: 1rem auto;
+    }
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .hero-text button {
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 6rem auto;
+    position: relative;
+    max-width: 1400px;
+    padding: 0 2rem;
+}
+
+.gallery-item {
+    flex: 1;
+    overflow: hidden;
+    min-width: 300px;
+    align-self: flex-end;
+}
+
+.gallery-button {
+    position: absolute;
+    top: 15%;
+    left: 70%;
+    color: black;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    letter-spacing: 0.16em;
+    font-size: 14px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.gallery-button:hover {
+    background-color: #f4f4f4;
+}
+  
+.gallery-button::after {
+    content: '>';
+    position: absolute;
+    right: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.gallery-button:hover::after {
+    opacity: 1;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 800px){
+    .gallery-button {
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .gallery-item {
+        flex: 1;
+    }
+    .gallery-item img {
+        height: 100%;
+    }
+    .gallery {
+        padding: 0;
+        margin-top: 3rem !important;
+    }
+}
+
+
+
+/* Products Section */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 80%;
+    margin: 10rem auto;
+    max-width: 1400px;
+    padding: 0 2rem;
+}
+  
+.products-column {
+    width: 30%;
+    font-family: 'Prata', Georgia, "Times New Roman", serif;
+    min-width: 300px;
+}
+
+.products-column h2 {
+    font-size: 52px;
+    line-height: 1.2em;
+    font-weight: 100;
+    text-align: left;
+    color: #333;
+}
+  
+.products-column p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.shop-button {
+    margin-top: 2rem;
+    color: black;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.16em;
+    font-size: 14px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.shop-button:hover {
+    background-color: #f4f4f4;
+}
+  
+.shop-button::after {
+    content: '>';
+    position: absolute;
+    right: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.shop-button:hover::after {
+    opacity: 1;
+}
+  
+  
+.product {
+    position: relative;
+    cursor: pointer;
+}
+  
+.product-image {
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+  
+.product:hover .product-image {
+    transform: scale(1.03);
+}
+  
+.product-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.product:hover .product-overlay {
+    opacity: 1;
+}
+  
+.plus-icon {
+    font-size: 2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 800px){
+    .products {
+        padding: 0;
+        margin-top: 8rem !important;
+        text-align: center !important;
+    }
+    .products-column {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .products-column h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .products-column p {
+        font-size: 1rem;
+    }
+    .shop-button {
+        font-size: 0.8rem;
+    }
+}
+  
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+  
+.modal-image {
+    max-width: 85%;
+    max-height: 85%;
+}
+
+
+
+/* Banner Section */
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-text h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.2em;
+    outline-style: dotted;
+    padding: 0.5rem;
+}
+
+.banner-text p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.banner-button {
+    color: white;
+    background-color: #d4a73a;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    letter-spacing: 0.16em;
+    font-size: 14px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-button:hover {
+    background-color: #b38e2e;
+}
+
+@media screen and (max-width: 768px){
+    .banner {
+        margin: 1rem auto;        
+    }
+    .banner-text h2 {
+        font-size: 2rem;
+    }
+    .banner-text p {
+        display: none;
+    }
+    .banner-button {
+        font-size: 0.5rem;        
+    }
+}
+
+
+/* contact */
+
+.contact {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 6rem 0;
+  }
+  
+  .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contact-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .contact-content p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    color: #666;
+  }
+  
+  .contact-button {
+    margin-top: 2rem;
+    color: black;
+    background-color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 0.16em;
+    font-size: 14px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact-button:hover {
+    background-color: #f4f4f4;
+}
+  
+@media (max-width: 768px) {
+    .contact-content {
+        padding: 0 20px;
+    }
+}
