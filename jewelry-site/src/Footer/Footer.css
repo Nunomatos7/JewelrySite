@@ -6,66 +6,97 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+}
   
-  .social {
+.social {
     display: flex;
     gap: 1rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  .social h2 {
+.social h2 {
     font-size: 1.2rem;
     font-weight: bold;
-  }
+}
   
-  .social a {
+.social a {
     color: #333;
     font-size: 1.5rem;
-  }
+}
   
-  .social a:hover {
+.social a:hover {
     color: rgb(161, 137, 0);
-  }
+}
 
-  .social-icons {
+.social-icons {
     display: flex;
     gap: 1rem;
-  }
+}
   
-  .weather {
+.weather {
     text-align: center;
-  }
+}
   
-  .weather p {
+.weather p {
     font-size: 1.2rem;
     margin: 0.5rem 0;
     font-weight: bold;
     color: #333;
-  }
+}
   
-  .weather img {
+.weather img {
     max-width: 50px;
     margin-right: 1rem;
-  }
+}
   
-  .loading {
+.loading {
     font-style: italic;
     color: #666;
-  }
+}
 
-  .temperature {
+.temperature {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-    .temperature span {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #333;
+.temperature span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+  
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        gap: 1rem;
     }
   
+    .social {
+        flex-direction: row;
+    }
+  
+    .social h2 {
+        font-size: 1rem;
+    }
+  
+    .social a {
+        font-size: 1.2rem;
+    }
+  
+    .weather p {
+        font-size: 1rem;
+    }
+  
+    .temperature {
+        font-size: 1.2rem;
+    }
+  
+    .temperature span {
+        font-size: 1.2rem;
+    }
+}
