@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 import Navbar from './Navbar/Navbar';
 import Main from './Main/Main';
-import Gallery from './Gallery/Gallery';
+import Shop from './Shop/Shop';
 import About from './About/About';
 import Contact from './Contact/Contact';
 import Footer from './Footer/Footer';
@@ -18,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" exact element={<Main />} />
             <Route path="/about" element={<About />} />
-            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/shop" element={<Shop />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

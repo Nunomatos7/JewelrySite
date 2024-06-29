@@ -1,0 +1,248 @@
+.contact-heading{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: #333333;
+    margin-bottom: 50px;
+}
+
+.contact-heading h2{
+    font-family: 'Prata', Georgia, "Times New Roman", serif;
+    font-size: 72px;
+    color: #FFFFFF;
+    line-height: 1.2em;
+    font-weight: lighter;
+    margin-left: 200px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 2rem;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    flex-basis: calc(50% - 50px);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-top-row {
+    box-shadow: 0 0 20px rgba(212, 167, 58, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.info-address {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.contact-icon {
+    border: 2px dotted #d4a73a;
+    border-radius: 50%;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+.info-address h3 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.601);
+}
+
+.info-address p {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.601);
+}
+
+.info-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-email {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(212, 167, 58, 0.1);
+    flex-basis: calc(50% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.info-email h3 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.601);
+}
+
+.emails p{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.601);
+}
+
+
+.info-phone {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(212, 167, 58, 0.1);
+    flex-basis: calc(50% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-phone h3 {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.601);
+}
+
+.phones p{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.601);
+}
+
+
+.contact-form {
+    flex-basis: calc(50% - 50px);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(212, 167, 58, 0.1);
+    max-height: 392px;
+}
+
+.name-email {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.name-email input {
+    width: 45%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #d4a73a;
+}
+
+.subject {
+   
+    margin: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.subject input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d4a73a; 
+}
+
+.message {
+    margin: 0 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: s;
+}
+
+.message textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #d4a73a;
+    height: 139px;
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d4a73a;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background-color: #9d7923;
+}
+
+@media (max-width: 1024px) {
+    .contact-heading h2 {
+        font-size: 60px;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-info {
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .info-email, .info-phone {
+        flex-basis: 100%;
+    }
+    .contact-form {
+        flex-basis: 100%;
+    }
+    .contact-heading {
+        height: 120px;
+    }
+    .contact-heading h2 {
+        font-size: 48px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-heading h2 {
+        font-size: 36px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-heading h2 {
+        font-size: 28px;
+        margin-left: 10px;
+    }
+}

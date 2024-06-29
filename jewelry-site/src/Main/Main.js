@@ -1,8 +1,8 @@
 import './Main.css';
 import React, {useState} from 'react';
 import heroImage from '../images/hero.png';
-import galleryImage1 from '../images/gallery1.jpg';
-import galleryImage2 from '../images/gallery2.jpg';
+import shop1 from '../images/shop1.jpg';
+import shop2 from '../images/shop2.jpg';
 import itemImage1 from '../images/home-shop1.jpg';
 import itemImage2 from '../images/home-shop2.jpg';
 import bannerImage from '../images/banner.jpg';
@@ -25,20 +25,19 @@ function Main() {
         <div className="hero-text">
           <h1>Welcome to JewelryBrand</h1>
           <p>Discover the finest jewelry collections crafted with precision and love.</p>
-          <button className="shop-button">Shop Now</button>
+          <a href="/about">
+            <button className="shop-button">See More</button>
+          </a>
         </div>
       </section>
 
       <section className="gallery">
         <div className="gallery-item">
-          <img src={galleryImage1} alt="Gallery 1" className="gallery-image" />
+          <img src={shop1} alt="Gallery 1" className="gallery-image" />
         </div>
         <div className="gallery-item">
-          <img src={galleryImage2} alt="Gallery 2" className="gallery-image" />
+          <img src={shop2} alt="Gallery 2" className="gallery-image" />
         </div>
-        <a href="/gallery">
-          <button className="gallery-button">Check Gallery</button>
-        </a>
       </section>
 
       <section className="products">
