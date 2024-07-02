@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/JewelrySite/static/css/main.3ed10f51.css",
-    "main.js": "/JewelrySite/static/js/main.0a614a42.js",
+    "main.js": "/JewelrySite/static/js/main.5ff3529b.js",
     "static/js/453.6a83bfd3.chunk.js": "/JewelrySite/static/js/453.6a83bfd3.chunk.js",
     "static/media/hero.png": "/JewelrySite/static/media/hero.9b98ad67aa5328b78ccd.png",
     "static/media/shop2.jpg": "/JewelrySite/static/media/shop2.fc5d0d2eaf73af02a6e0.jpg",
@@ -19,11 +19,11 @@
     "static/media/home-shop2.jpg": "/JewelrySite/static/media/home-shop2.647d18d0bd8f3a219245.jpg",
     "index.html": "/JewelrySite/index.html",
     "main.3ed10f51.css.map": "/JewelrySite/static/css/main.3ed10f51.css.map",
-    "main.0a614a42.js.map": "/JewelrySite/static/js/main.0a614a42.js.map",
+    "main.5ff3529b.js.map": "/JewelrySite/static/js/main.5ff3529b.js.map",
     "453.6a83bfd3.chunk.js.map": "/JewelrySite/static/js/453.6a83bfd3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ed10f51.css",
-    "static/js/main.0a614a42.js"
+    "static/js/main.5ff3529b.js"
   ]
 }
