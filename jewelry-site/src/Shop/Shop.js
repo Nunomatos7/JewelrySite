@@ -8,16 +8,18 @@ import shop3 from '../images/shop-3.jpg';
 import shop4 from '../images/shop-4.jpg';
 import shop5 from '../images/shop-5.jpg';
 import shop6 from '../images/shop-6.jpg';
+import shop7 from '../images/shop-7.jpg';
+import shop8 from '../images/shop-8.jpg';
 
 const productsData = [
   { id: 1, name: 'Air Plants', image: shop1, rating: 4, price: 49.99 },
   { id: 2, name: 'Cartoon Pillow', image: shop2, rating: 3, price: 69.99 },
-  { id: 3, name: 'Cutting Board', image: shop4, rating: 2, price: 29.99 },
-  { id: 4, name: 'Designer Headphones', image: shop5, rating: 4, price: 99.99 },
-  { id: 5, name: 'Earth Friendly Bag', image: shop6, rating: 5, price: 119.99 },
-  { id: 6, name: 'Purple Chair', image: shop3, rating: 5, price: 89.99 },
-  { id: 7, name: 'Simple Vase', image: shop1, rating: 4, price: 199.99 },
-  { id: 8, name: 'Wooden Table', image: shop2, rating: 3, price: 41.99 },
+  { id: 3, name: 'Cutting Board', image: shop3, rating: 2, price: 29.99 },
+  { id: 4, name: 'Designer Headphones', image: shop4, rating: 4, price: 99.99 },
+  { id: 5, name: 'Earth Friendly Bag', image: shop5, rating: 5, price: 119.99 },
+  { id: 6, name: 'Purple Chair', image: shop6, rating: 5, price: 89.99 },
+  { id: 7, name: 'Simple Vase', image: shop7, rating: 4, price: 199.99 },
+  { id: 8, name: 'Wooden Table', image: shop8, rating: 3, price: 41.99 },
 ];
 
 function Shop() {
