@@ -18,28 +18,33 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <div className="social">
-        <h2>Get connected with Us</h2>
-        <div className='social-icons'>
-          <a href="/"><Instagram></Instagram></a>
-          <a href="/"><Facebook></Facebook></a>
-          <a href="/"><Twitter></Twitter></a>
-        </div>
+      <div className='footer-copyright'>
+        <p>&copy; 2024 Jewelry Site</p>
       </div>
-      <div className="weather">
-        {weather ? (
-          <>
-            <div className='temperature'>
-              <img src={`http:${weather.current.condition.icon} `} alt="Weather Icon" /> 
-              <span>{weather.current.temp_c} °C</span>
-            </div>
-            <p>{weather.current.condition.text}</p>
-          </>
-        ) : error ? (
-          <p>{error}</p>
-        ) : (
-          <p>Loading weather...</p>
-        )}
+      <div className='footer-content'>
+        <div className="social">
+          <h2>Get connected with Us</h2>
+          <div className='social-icons'>
+            <a href="/"><Instagram></Instagram></a>
+            <a href="/"><Facebook></Facebook></a>
+            <a href="/"><Twitter></Twitter></a>
+          </div>
+        </div>
+        <div className="weather">
+          {weather ? (
+            <>
+              <div className='temperature'>
+                <img src={`http:${weather.current.condition.icon} `} alt="Weather Icon" /> 
+                <span>{weather.current.temp_c} °C</span>
+              </div>
+              <p>{weather.current.condition.text}</p>
+            </>
+          ) : error ? (
+            <p>{error}</p>
+          ) : (
+            <p>Loading weather...</p>
+          )}
+        </div>
       </div>
     </footer>
   );

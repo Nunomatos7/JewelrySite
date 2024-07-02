@@ -43,13 +43,15 @@ function Main() {
       <section className="products">
         <div className="products-column">
           <h2>New Arrivals</h2>
-          <button className="shop-button">Shop All</button>
+          <a href="/shop">
+            <button className="shop-button">Shop All</button>
+          </a>
         </div>
         <div className="products-column">
           <div className="product" onClick={() => openModal(itemImage1)}>
             <img src={itemImage1} alt="Item 1" className="product-image" />
             <div className="product-overlay">
-              <span className="plus-icon">+</span>
+              <span className="plus-icon">⛶</span>
             </div>
           </div>
           <p>Beautiful Necklace</p>
@@ -58,7 +60,7 @@ function Main() {
           <div className="product" onClick={() => openModal(itemImage2)}>
             <img src={itemImage2} alt="Item 2" className="product-image" />
             <div className="product-overlay">
-              <span className="plus-icon">+</span>
+              <span className="plus-icon">⛶</span>
             </div>
           </div>
           <p>Elegant Earrings</p>

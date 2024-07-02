@@ -3,17 +3,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.about h1 {
-    font-size: 72px;
-    margin-bottom: 20px;
+.about-heading{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    background-color: #333333;
+    margin-bottom: 50px;
+}
+
+.about-heading h2{
     font-family: 'Prata', Georgia, "Times New Roman", serif;
+    font-size: 72px;
+    color: #FFFFFF;
+    line-height: 1.2em;
     font-weight: lighter;
-    color: #333;
+    margin-left: 200px;
 }
 
 .about-content {
@@ -25,6 +33,7 @@
     max-width: 1400px;
     padding: 0 2rem;
     gap: 4rem;
+    
 }
 
 .about-col {
